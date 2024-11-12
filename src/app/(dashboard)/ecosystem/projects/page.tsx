@@ -13,6 +13,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Progress } from '@/components/ui/progress';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { ProjectSocialFeatures } from '../social/ProjectSocialFeatures';
 
 // Mock data for the chart
 const tvlData = [
@@ -367,6 +368,9 @@ function ProjectModal({ project, onClose }: { project: (typeof projects)[0]; onC
                                             </Card>
                                         ))}
                                     </div>
+                                </div>
+                                <div className="md:col-span-2">
+                                    <ProjectSocialFeatures project={project} />
                                 </div>
 
                                 <div className="pb-6">
